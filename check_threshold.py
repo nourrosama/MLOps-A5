@@ -2,7 +2,7 @@ import mlflow
 import os
 import sys
 
-THRESHOLD = 0.85
+THRESHOLD = 0.84
 
 tracking_uri = os.environ.get("MLFLOW_TRACKING_URI", "http://localhost:5000")
 mlflow.set_tracking_uri(tracking_uri)

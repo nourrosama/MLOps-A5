@@ -28,9 +28,9 @@ jobs:
         env:
           DAGSHUB_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
         run: |
-          dvc remote modify origin --global auth basic
-          dvc remote modify origin --global user nourrosama
-          dvc remote modify origin --global password $DAGSHUB_TOKEN
+          dvc remote modify origin auth basic
+          dvc remote modify origin user nourrosama
+          dvc remote modify origin password $DAGSHUB_TOKEN
           dvc pull
 
       - name: Train model

@@ -30,7 +30,7 @@ jobs:
         run: |
           dvc remote modify origin auth basic
           dvc remote modify origin user nourrosama
-          dvc remote modify origin password $DAGSHUB_TOKEN
+          dvc remote modify origin password "$DAGSHUB_TOKEN"
           dvc pull
 
       - name: Train model

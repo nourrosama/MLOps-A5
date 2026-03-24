@@ -56,6 +56,7 @@ def train_model(learning_rate, batch_size, epochs):
         mlflow.log_param("epochs", epochs)
 
         print(f"RUNNING: LR={learning_rate}, Batch={batch_size}")
+        
 
         for epoch in range(epochs):
             running_loss = 0.0
